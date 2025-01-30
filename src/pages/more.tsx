@@ -133,7 +133,7 @@ export default function More() {
                 What My Colleagues Say
               </h1>
               <p className="text-base text-zinc-600 font-sans">
-                Feedback from professionals I've had the pleasure of working with throughout my career
+                Feedback from professionals I&apos;ve had the pleasure of working with throughout my career
               </p>
             </div>
 
