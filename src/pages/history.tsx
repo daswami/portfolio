@@ -14,7 +14,7 @@ const experiences = [
   {
     company: "3DS",
     logo: "/company-logos/dassaultsystemes.svg",
-    role: "Software Engineer Intern",
+    role: "Solutions / Software Engineer Intern",
     dates: "2024",
    
   },
