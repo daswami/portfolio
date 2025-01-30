@@ -5,31 +5,31 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const experiences = [
   {
-    company: "TechCorp Solutions",
+    company: "Unlonly",
     logo: "/company-logos/unlonly.png",
-    role: "Senior Software Engineer",
-    dates: "2023 - Present",
+    role: "Founding Engineer",
+    dates: "2024-2025",
     description: "Led development of cloud-native applications and microservices architecture. Mentored junior developers and implemented best practices for code quality."
   },
   {
     company: "3DS",
     logo: "/company-logos/dassaultsystemes.svg",
-    role: "Full Stack Developer",
-    dates: "2021 - 2023",
+    role: "Software Engineer Intern",
+    dates: "2024",
     description: "Developed data visualization dashboards using React and D3.js. Optimized database queries resulting in 40% performance improvement."
   },
   {
-    company: "Innovation Labs",
+    company: "Desai Accelerator",
     logo: "/company-logos/desai.jpg",
-    role: "Software Developer",
-    dates: "2019 - 2021",
+    role: "Software Developer Intern",
+    dates: "2023",
     description: "Built and maintained RESTful APIs for mobile applications. Implemented automated testing protocols reducing bug reports by 60%."
   },
   {
-    company: "StartUp Nexus",
+    company: "Scienaptic AI",
     logo: "/company-logos/scienaptic1.png",
-    role: "Junior Developer",
-    dates: "2018 - 2019",
+    role: "Machine Learning Engineer Intern",
+    dates: "2022",
     description: "Developed and maintained front-end components using React. Collaborated with UI/UX team to implement responsive designs."
   }
 ];
@@ -38,7 +38,7 @@ export default function History() {
   return (
     <>
       <Head>
-        <title>History - Professional Journey</title>
+        <title>History</title>
         <meta name="description" content="Professional history and experience" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -48,11 +48,35 @@ export default function History() {
         {/* Navigation */}
         <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm border-b border-zinc-200 z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-center h-16 items-center space-x-8">
-              <Link href="/" className="text-zinc-600 hover:text-primary">About</Link>
-              <Link href="/history" className="text-zinc-900 hover:text-primary">History</Link>
-              <Link href="/projects" className="text-zinc-600 hover:text-primary">Projects</Link>
-              <Link href="/more" className="text-zinc-600 hover:text-primary">More</Link>
+            <div className="flex justify-center h-14 items-center space-x-8">
+              <Link 
+                href="/" 
+                className="text-zinc-600 hover:text-primary relative group h-full flex items-center"
+              >
+                About
+                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              </Link>
+              <Link 
+                href="/history" 
+                className="text-primary relative group h-full flex items-center"
+              >
+                History
+                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60"></div>
+              </Link>
+              <Link 
+                href="/projects" 
+                className="text-zinc-600 hover:text-primary relative group h-full flex items-center"
+              >
+                Projects
+                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              </Link>
+              <Link 
+                href="/more" 
+                className="text-zinc-600 hover:text-primary relative group h-full flex items-center"
+              >
+                More
+                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              </Link>
             </div>
           </div>
         </nav>
@@ -65,12 +89,12 @@ export default function History() {
                 Professional Journey
               </h1>
               <p className="text-lg text-zinc-600">
-                A timeline of my professional growth and achievements in the tech industry
+                A timeline of my professional growth in tech
               </p>
             </div>
 
             <h2 className="font-heading text-2xl font-semibold text-zinc-800 mb-8">
-              Professional Experience
+              Experience
             </h2>
 
             <div className="space-y-8">
@@ -125,17 +149,17 @@ export default function History() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="flex flex-col items-center space-y-4">
               <div className="flex space-x-6">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
+                <a href="https://github.com/daswami" target="_blank" rel="noopener noreferrer" 
                    className="text-zinc-600 hover:text-primary">
                   <FaGithub className="w-6 h-6" />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                <a href="https://linkedin.com/in/dilan-swami" target="_blank" rel="noopener noreferrer"
                    className="text-zinc-600 hover:text-primary">
                   <FaLinkedin className="w-6 h-6" />
                 </a>
               </div>
               <p className="text-sm text-zinc-500">
-                &copy; {new Date().getFullYear()} Joe. All rights reserved.
+                &copy; {new Date().getFullYear()} Dilan Swami. All rights reserved.
               </p>
             </div>
           </div>

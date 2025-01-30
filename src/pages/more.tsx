@@ -38,9 +38,10 @@ const skills = {
     { name: "PHP", logo: "/skill-logos/php.svg" },
     { name: "C++", logo: "/skill-logos/cplusplus.svg" },
     { name: "PostgreSQL", logo: "/skill-logos/postgresql.svg" },
+    { name: "MySQL", logo: "/skill-logos/mysql.svg" },
     { name: "MongoDB", logo: "/skill-logos/mongodb.svg" },
     { name: "Supabase", logo: "/skill-logos/supabase.svg" },
-    { name: "MySQL", logo: "/skill-logos/mysql.svg" },
+    
   ],
   Deployment: [
     { name: "AWS", logo: "/skill-logos/amazonwebservices.svg" },
@@ -54,15 +55,16 @@ const skills = {
   ],
 
   ML: [
-    { name: "Gemini", logo: "/skill-logos/googlegemini.svg" },
-    { name: "HuggingFace", logo: "/skill-logos/huggingface.svg" },
-    { name: "Jupyter", logo: "/skill-logos/jupyter.svg" },
+    
+    { name: "PyTorch", logo: "/skill-logos/pytorch.svg" },
+    { name: "TensorFlow", logo: "/skill-logos/tensorflow.svg" },
     { name: "Numpy", logo: "/skill-logos/numpy.svg" },
     { name: "Pandas", logo: "/skill-logos/pandas.svg" },
     { name: "OpenAI", logo: "/skill-logos/openai.svg" },
+    { name: "Gemini", logo: "/skill-logos/googlegemini.svg" },
     { name: "OpenCV", logo: "/skill-logos/opencv.svg" },
-    { name: "PyTorch", logo: "/skill-logos/pytorch.svg" },
-    { name: "TensorFlow", logo: "/skill-logos/tensorflow.svg" },
+    { name: "HuggingFace", logo: "/skill-logos/huggingface.svg" },
+    { name: "Jupyter", logo: "/skill-logos/jupyter.svg" },
   ],
 };
 
@@ -71,7 +73,7 @@ const certifications = [
     name: "AWS Solutions Architect - Associate",
     organization: "Amazon Web Services",
     logo: "/cert-logos/aws-solutions.png",
-    dates: "2024 - Present",
+    dates: "2024",
     description: "Demonstrated expertise in designing distributed systems and deploying applications on AWS infrastructure. Proficient in AWS services including EC2, S3, RDS, and Lambda.",
   },
 ];
@@ -80,7 +82,7 @@ export default function More() {
   return (
     <>
       <Head>
-        <title>More - Skills & Testimonials</title>
+        <title>Skills & Testimonials</title>
         <meta name="description" content="Skills, certifications, and testimonials" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -90,11 +92,35 @@ export default function More() {
         {/* Navigation */}
         <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm border-b border-zinc-200 z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-center h-16 items-center space-x-8">
-              <Link href="/" className="text-zinc-600 hover:text-primary">About</Link>
-              <Link href="/history" className="text-zinc-600 hover:text-primary">History</Link>
-              <Link href="/projects" className="text-zinc-600 hover:text-primary">Projects</Link>
-              <Link href="/more" className="text-zinc-900 hover:text-primary">More</Link>
+            <div className="flex justify-center h-14 items-center space-x-8">
+              <Link 
+                href="/" 
+                className="text-zinc-600 hover:text-primary relative group h-full flex items-center"
+              >
+                About
+                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              </Link>
+              <Link 
+                href="/history" 
+                className="text-zinc-600 hover:text-primary relative group h-full flex items-center"
+              >
+                History
+                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              </Link>
+              <Link 
+                href="/projects" 
+                className="text-zinc-600 hover:text-primary relative group h-full flex items-center"
+              >
+                Projects
+                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              </Link>
+              <Link 
+                href="/more" 
+                className="text-primary relative group h-full flex items-center"
+              >
+                More
+                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60"></div>
+              </Link>
             </div>
           </div>
         </nav>
@@ -103,20 +129,20 @@ export default function More() {
         <section className="pt-24 pb-6 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-6">
-              <h1 className="font-heading text-3xl sm:text-3xl font-bold text-zinc-900 mb-4 mt-4">
+              <h1 className="font-heading text-3xl sm:text-3xl font-medium text-zinc-900 mb-4 mt-4">
                 What My Colleagues Say
               </h1>
-              <p className="text-lg text-zinc-600 max-w-3xl mx-auto">
+              <p className="text-base text-zinc-600 font-sans">
                 Feedback from professionals I've had the pleasure of working with throughout my career
               </p>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-6 font-sans">
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="bg-white rounded-xl p-8 shadow-sm">
                   <div className="flex gap-4">
                     <FaQuoteLeft className="text-primary/20 w-8 h-8 flex-shrink-0" />
-                    <div>
+                  <div>
                       <p className="text-lg text-zinc-700 italic mb-4">
                         {testimonial.quote}
                       </p>
@@ -140,10 +166,10 @@ export default function More() {
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="font-heading text-3xl font-bold text-zinc-900 mb-4">
+              <h2 className="font-heading text-3xl font-medium text-zinc-900 mb-4">
                 Skills
               </h2>
-              <p className="text-lg text-zinc-600 max-w-3xl mx-auto">
+              <p className="text-base text-zinc-600 font-sans">
                 An overview of my technical expertise across various domains
               </p>
             </div>
@@ -175,7 +201,7 @@ export default function More() {
                         )}
                           </div>
                         </div>
-                        <span className="text-sm font-medium text-zinc-700">{skill.name}</span>
+                        <span className="text-sm font-sans text-zinc-700">{skill.name}</span>
                       </div>
                     ))}
                   </div>
@@ -188,9 +214,9 @@ export default function More() {
         {/* Certifications Section */}
         <section className="py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-heading text-3xl font-bold text-zinc-900 mb-8 text-center">
-              Certifications
-            </h2>
+          <h2 className="font-heading text-3xl text-center font-medium text-zinc-900 mb-4">
+                Certifications
+              </h2>
 
             <div className="space-y-6">
               {certifications.map((cert, index) => (
@@ -215,22 +241,12 @@ export default function More() {
                       </div>
                     </div>
                     <div className="flex-grow">
-                      <div className="flex justify-between items-start mb-2">
-                        <div>
-                          <h3 className="font-heading text-xl font-semibold text-zinc-900">
-                            {cert.name}
-                          </h3>
-                          <p className="text-primary-dark font-medium">
-                            {cert.organization}
-                          </p>
-                        </div>
-                        <span className="text-sm text-zinc-500">
-                          {cert.dates}
-                        </span>
-                      </div>
-                      <p className="text-zinc-600 mt-2">
-                        {cert.description}
-                      </p>
+                      <h3 className="font-heading text-xl font-medium text-zinc-900 mb-1">
+                        {cert.name}
+                      </h3>
+                      <p className="text-zinc-600 mb-2 font-sans">{cert.organization}</p>
+                      <p className="text-zinc-500 text-sm mb-4 font-sans">{cert.dates}</p>
+                      <p className="text-zinc-600 font-sans">{cert.description}</p>
                     </div>
                   </div>
                 </div>
@@ -244,17 +260,17 @@ export default function More() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="flex flex-col items-center space-y-4">
               <div className="flex space-x-6">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
+                <a href="https://github.com/daswami" target="_blank" rel="noopener noreferrer" 
                    className="text-zinc-600 hover:text-primary">
                   <FaGithub className="w-6 h-6" />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                <a href="https://linkedin.com/in/dilan-swami" target="_blank" rel="noopener noreferrer"
                    className="text-zinc-600 hover:text-primary">
                   <FaLinkedin className="w-6 h-6" />
                 </a>
               </div>
               <p className="text-sm text-zinc-500">
-                © {new Date().getFullYear()} Joe. All rights reserved.
+                &copy; {new Date().getFullYear()} Dilan Swami. All rights reserved.
               </p>
             </div>
           </div>
