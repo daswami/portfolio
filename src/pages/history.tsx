@@ -7,30 +7,30 @@ const experiences = [
   {
     company: "Unlonly",
     logo: "/company-logos/unlonly.png",
-    role: "Founding Engineer",
-    dates: "2024-2025",
-    description: "Led development of cloud-native applications and microservices architecture. Mentored junior developers and implemented best practices for code quality."
+    role: "Co-founder",
+    dates: "2024",
+    
   },
   {
     company: "3DS",
     logo: "/company-logos/dassaultsystemes.svg",
     role: "Software Engineer Intern",
     dates: "2024",
-    description: "Developed data visualization dashboards using React and D3.js. Optimized database queries resulting in 40% performance improvement."
+   
   },
   {
     company: "Desai Accelerator",
     logo: "/company-logos/desai.jpg",
     role: "Software Developer Intern",
     dates: "2023",
-    description: "Built and maintained RESTful APIs for mobile applications. Implemented automated testing protocols reducing bug reports by 60%."
+    
   },
   {
     company: "Scienaptic AI",
     logo: "/company-logos/scienaptic1.png",
     role: "Machine Learning Engineer Intern",
     dates: "2022",
-    description: "Developed and maintained front-end components using React. Collaborated with UI/UX team to implement responsive designs."
+    
   }
 ];
 
