@@ -32,13 +32,13 @@ export default function About() {
                 History
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </Link>
-              <Link 
+              {/* <Link 
                 href="/projects" 
                 className="text-zinc-600 hover:text-primary relative group h-full flex items-center"
               >
                 Projects
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              </Link>
+              </Link> */}
               <Link 
                 href="/more" 
                 className="text-zinc-600 hover:text-primary relative group h-full flex items-center"
@@ -57,23 +57,23 @@ export default function About() {
               {/* Left Side - Content */}
               <div className="md:col-span-7 space-y-8">
                 <h1 className="font-heading text-3xl sm:text-4xl font-medium text-zinc-700 leading-relaxed">
-                  My name is Dilan Swami and I&apos;m a bilingual engineer (product & people).
+                  My name is Dilan Swami and I'm going from building code to building relationships. 
                 </h1>
                 <div className="space-y-6 font-sans">
                   <p className="text-base text-zinc-500 leading-relaxed">
-                    My journey started out with a dream - to be a founder. To create something impactful and lead others towards that cause. 
+                  I learned software because I was drawn to the startup world — first SaaS, now AI — and I wanted to leave a legacy. I really enjoy software engineering. 
                   </p>
                   <p className="text-base text-zinc-500 leading-relaxed">
-                    To create I needed the tools - and that&apos;s when I found software. I started out struggling to learn C++ using Medium articles before taking my first high school computer science class. I quickly discovered I had a knack for building, and created my first project: a stock data analysis tool in Java. 
+                  But the more I built, the more I found myself gravitating towards anything that would put me in touch with customers. I assumed that was normal… until I realized most engineers preferred to stay behind the scenes. 
                   </p>
                   <p className="text-base text-zinc-500 leading-relaxed">
-                    From there I jumped right in, gaining professional experience while maintaining my passion for impactful personal projects. I interned at a couple of startups while leading a dev team at U of M to develop a patient management application to support hospitals in Guatemala. 
+                  Sales makes sense to me - not just the relationship-building, but the high-stakes, competitive, fast-paced nature of it. It;s a game where the hardest working and most adaptable win. 
                   </p>
                   <p className="text-base text-zinc-500 leading-relaxed">
-                    I&apos;m always looking to learn and become better. What we do is unique - we can like an idea, sit down our computer, grind for 2 days straight, and build the product that was only a mental image a couple days prior. 
+                  I’ve recently worked behind AEs. I’ve had numerous conversations with SEs. And what I’ve learned is surprising - sales isn’t about who is the most slick, or who can apply the most pressure to force a purchase, it’s about relationship building, speaking the customer’s language, and providing value. 
                   </p>
                   <p className="text-base text-zinc-500 leading-relaxed">
-                    I&apos;m grateful for that opportunity and look forward to building alongside really smart engineers as I progress in my career. 
+                  I want to build a company, and sales is where it starts. 
                   </p>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export default function About() {
                   className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-zinc-100 hover:bg-zinc-200 text-zinc-700 rounded-lg transition-colors duration-200"
                 >
                   <FaFileDownload className="w-5 h-5" />
-                  <span className="font-medium">Download CV</span>
+                  <span className="font-medium">Download Resume</span>
                 </a>
               </div>
             </div>

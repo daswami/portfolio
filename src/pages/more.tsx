@@ -107,13 +107,13 @@ export default function More() {
                 History
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </Link>
-              <Link 
+              {/* <Link 
                 href="/projects" 
                 className="text-zinc-600 hover:text-primary relative group h-full flex items-center"
               >
                 Projects
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              </Link>
+              </Link> */}
               <Link 
                 href="/more" 
                 className="text-primary relative group h-full flex items-center"
@@ -163,7 +163,7 @@ export default function More() {
         </section>
 
         {/* Skills Section */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        {/* <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="font-heading text-3xl font-medium text-zinc-900 mb-4">
@@ -209,7 +209,7 @@ export default function More() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Certifications Section */}
         <section className="py-16 px-4 sm:px-6 lg:px-8">

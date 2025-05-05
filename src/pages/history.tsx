@@ -5,8 +5,15 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const experiences = [
   {
+    company: "Rebet",
+    logo: "/company-logos/rebet.jpeg",
+    role: "Software Engineer",
+    dates: "2025",
+    
+  },
+  {
     company: "Unlonly",
-    logo: "/company-logos/unlonly.png",
+    logo: "/company-logos/unlonly.jpg",
     role: "Co-founder",
     dates: "2024",
     
@@ -23,15 +30,16 @@ const experiences = [
     logo: "/company-logos/desai.jpg",
     role: "Software Developer Intern",
     dates: "2023",
-    
-  },
-  {
-    company: "Scienaptic AI",
-    logo: "/company-logos/scienaptic1.png",
-    role: "Machine Learning Engineer Intern",
-    dates: "2022",
-    
   }
+    
+  // },
+  // {
+  //   company: "Scienaptic AI",
+  //   logo: "/company-logos/scienaptic1.png",
+  //   role: "Machine Learning Engineer Intern",
+  //   dates: "2022",
+    
+  // }
 ];
 
 export default function History() {
@@ -63,13 +71,13 @@ export default function History() {
                 History
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60"></div>
               </Link>
-              <Link 
+              {/* <Link 
                 href="/projects" 
                 className="text-zinc-600 hover:text-primary relative group h-full flex items-center"
               >
                 Projects
                 <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary/60 via-primary to-primary/60 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              </Link>
+              </Link> */}
               <Link 
                 href="/more" 
                 className="text-zinc-600 hover:text-primary relative group h-full flex items-center"
@@ -89,7 +97,7 @@ export default function History() {
                 Professional Journey
               </h1>
               <p className="text-lg text-zinc-600">
-                A timeline of my professional growth in tech
+                A timeline of my professional growth
               </p>
             </div>
 
