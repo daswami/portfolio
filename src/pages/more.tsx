@@ -16,57 +16,57 @@ const testimonials = [
   },
 ];
 
-const skills = {
-  Frontend: [
-    { name: "HTML", logo: "/skill-logos/html5.svg" },
-    { name: "CSS", logo: "/skill-logos/css3.svg" },
-    { name: "JavaScript", logo: "/skill-logos/javascript.svg" },
-    { name: "TypeScript", logo: "/skill-logos/typescript.svg" },
-    { name: "React", logo: "/skill-logos/react.svg" },
-    { name: "Next.js", logo: "/skill-logos/nextdotjs.svg" },
-    { name: "Vue.js", logo: "/skill-logos/vuedotjs.svg" },
-    { name: "Figma", logo: "/skill-logos/figma.svg" },
-    { name: "Tailwind CSS", logo: "/skill-logos/tailwindcss.svg" },
-  ],
-  Backend: [
-    { name: "Python", logo: "/skill-logos/python.svg" },
-    { name: "FastAPI", logo: "/skill-logos/fastapi.svg" },
-    { name: "Flask", logo: "/skill-logos/flask.svg" },
-    { name: "Django", logo: "/skill-logos/django.svg" },
-    { name: "Node.js", logo: "/skill-logos/nodedotjs.svg" },
-    { name: "Java", logo: "/skill-logos/java.svg" },
-    { name: "PHP", logo: "/skill-logos/php.svg" },
-    { name: "C++", logo: "/skill-logos/cplusplus.svg" },
-    { name: "PostgreSQL", logo: "/skill-logos/postgresql.svg" },
-    { name: "MySQL", logo: "/skill-logos/mysql.svg" },
-    { name: "MongoDB", logo: "/skill-logos/mongodb.svg" },
-    { name: "Supabase", logo: "/skill-logos/supabase.svg" },
+// const skills = {
+//   Frontend: [
+//     { name: "HTML", logo: "/skill-logos/html5.svg" },
+//     { name: "CSS", logo: "/skill-logos/css3.svg" },
+//     { name: "JavaScript", logo: "/skill-logos/javascript.svg" },
+//     { name: "TypeScript", logo: "/skill-logos/typescript.svg" },
+//     { name: "React", logo: "/skill-logos/react.svg" },
+//     { name: "Next.js", logo: "/skill-logos/nextdotjs.svg" },
+//     { name: "Vue.js", logo: "/skill-logos/vuedotjs.svg" },
+//     { name: "Figma", logo: "/skill-logos/figma.svg" },
+//     { name: "Tailwind CSS", logo: "/skill-logos/tailwindcss.svg" },
+//   ],
+//   Backend: [
+//     { name: "Python", logo: "/skill-logos/python.svg" },
+//     { name: "FastAPI", logo: "/skill-logos/fastapi.svg" },
+//     { name: "Flask", logo: "/skill-logos/flask.svg" },
+//     { name: "Django", logo: "/skill-logos/django.svg" },
+//     { name: "Node.js", logo: "/skill-logos/nodedotjs.svg" },
+//     { name: "Java", logo: "/skill-logos/java.svg" },
+//     { name: "PHP", logo: "/skill-logos/php.svg" },
+//     { name: "C++", logo: "/skill-logos/cplusplus.svg" },
+//     { name: "PostgreSQL", logo: "/skill-logos/postgresql.svg" },
+//     { name: "MySQL", logo: "/skill-logos/mysql.svg" },
+//     { name: "MongoDB", logo: "/skill-logos/mongodb.svg" },
+//     { name: "Supabase", logo: "/skill-logos/supabase.svg" },
     
-  ],
-  Deployment: [
-    { name: "AWS", logo: "/skill-logos/amazonwebservices.svg" },
-    { name: "Git", logo: "/skill-logos/git.svg" },
-    { name: "GitHub", logo: "/skill-logos/github.svg" },
-    { name: "Vercel", logo: "/skill-logos/vercel.svg" },
-    { name: "Cypress", logo: "/skill-logos/cypress.svg" },
-    { name: "Prometheus", logo: "/skill-logos/prometheus.svg" },
-    { name: "Docker", logo: "/skill-logos/docker.svg" },
-    { name: "Kubernetes", logo: "/skill-logos/kubernetes.svg" },
-  ],
+//   ],
+//   Deployment: [
+//     { name: "AWS", logo: "/skill-logos/amazonwebservices.svg" },
+//     { name: "Git", logo: "/skill-logos/git.svg" },
+//     { name: "GitHub", logo: "/skill-logos/github.svg" },
+//     { name: "Vercel", logo: "/skill-logos/vercel.svg" },
+//     { name: "Cypress", logo: "/skill-logos/cypress.svg" },
+//     { name: "Prometheus", logo: "/skill-logos/prometheus.svg" },
+//     { name: "Docker", logo: "/skill-logos/docker.svg" },
+//     { name: "Kubernetes", logo: "/skill-logos/kubernetes.svg" },
+//   ],
 
-  ML: [
+//   ML: [
     
-    { name: "PyTorch", logo: "/skill-logos/pytorch.svg" },
-    { name: "TensorFlow", logo: "/skill-logos/tensorflow.svg" },
-    { name: "Numpy", logo: "/skill-logos/numpy.svg" },
-    { name: "Pandas", logo: "/skill-logos/pandas.svg" },
-    { name: "OpenAI", logo: "/skill-logos/openai.svg" },
-    { name: "Gemini", logo: "/skill-logos/googlegemini.svg" },
-    { name: "OpenCV", logo: "/skill-logos/opencv.svg" },
-    { name: "HuggingFace", logo: "/skill-logos/huggingface.svg" },
-    { name: "Jupyter", logo: "/skill-logos/jupyter.svg" },
-  ],
-};
+//     { name: "PyTorch", logo: "/skill-logos/pytorch.svg" },
+//     { name: "TensorFlow", logo: "/skill-logos/tensorflow.svg" },
+//     { name: "Numpy", logo: "/skill-logos/numpy.svg" },
+//     { name: "Pandas", logo: "/skill-logos/pandas.svg" },
+//     { name: "OpenAI", logo: "/skill-logos/openai.svg" },
+//     { name: "Gemini", logo: "/skill-logos/googlegemini.svg" },
+//     { name: "OpenCV", logo: "/skill-logos/opencv.svg" },
+//     { name: "HuggingFace", logo: "/skill-logos/huggingface.svg" },
+//     { name: "Jupyter", logo: "/skill-logos/jupyter.svg" },
+//   ],
+// };
 
 const certifications = [
   {

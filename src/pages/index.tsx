@@ -57,7 +57,7 @@ export default function About() {
               {/* Left Side - Content */}
               <div className="md:col-span-7 space-y-8">
                 <h1 className="font-heading text-3xl sm:text-4xl font-medium text-zinc-700 leading-relaxed">
-                  My name is Dilan Swami and I'm going from building code to building relationships. 
+                  My name is Dilan Swami and I am going from building code to building relationships. 
                 </h1>
                 <div className="space-y-6 font-sans">
                   <p className="text-base text-zinc-500 leading-relaxed">
