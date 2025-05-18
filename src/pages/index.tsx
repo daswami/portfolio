@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image';
-import { FaGithub, FaLinkedin, FaFileDownload } from 'react-icons/fa';
+// import Image from 'next/image';
+import { FaGithub, FaLinkedin, } from 'react-icons/fa';
 
 export default function About() {
   return (
