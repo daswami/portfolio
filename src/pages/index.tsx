@@ -79,7 +79,7 @@ export default function About() {
               </div>
 
               {/* Right Side - Image and CV Download */}
-              <div className="md:col-span-5">
+              {/* <div className="md:col-span-5">
                 <div className="aspect-square relative rounded-2xl overflow-hidden bg-zinc-100 mb-6 w-full">
                   <Image
                     src="/images/dilan.jpg"
@@ -97,7 +97,7 @@ export default function About() {
                   <FaFileDownload className="w-5 h-5" />
                   <span className="font-medium">Download Resume</span>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
