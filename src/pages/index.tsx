@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-// import Image from 'next/image';
+import Image from 'next/image';
 import { FaGithub, FaLinkedin, } from 'react-icons/fa';
 
 export default function About() {
@@ -79,7 +79,7 @@ export default function About() {
               </div>
 
               {/* Right Side - Image and CV Download */}
-              {/* <div className="md:col-span-5">
+              <div className="md:col-span-5">
                 <div className="aspect-square relative rounded-2xl overflow-hidden bg-zinc-100 mb-6 w-full">
                   <Image
                     src="/images/dilan.jpg"
@@ -89,15 +89,15 @@ export default function About() {
                     priority
                   />
                 </div>
-                <a
+                {/* <a
                   href="/documents/Dilan_Swami_Resume.pdf"
                   download
                   className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-zinc-100 hover:bg-zinc-200 text-zinc-700 rounded-lg transition-colors duration-200"
                 >
                   <FaFileDownload className="w-5 h-5" />
                   <span className="font-medium">Download Resume</span>
-                </a>
-              </div> */}
+                </a> */}
+              </div>
             </div>
           </div>
         </section>
